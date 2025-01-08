@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/yoshiyoshifujii/go-temporal-sample/retryactivity"
+	"github.com/yoshiyoshifujii/go-temporal-sample/retryactivity/refactor_pattern1"
 	"go.temporal.io/sdk/client"
 	"go.temporal.io/sdk/worker"
 	"log"
@@ -19,8 +19,12 @@ func main() {
 
 	w := worker.New(c, "retry-activity", worker.Options{})
 
-	w.RegisterWorkflow(retryactivity.RetryWorkflow)
-	w.RegisterActivity(retryactivity.BatchProcessingActivity)
+	//w.RegisterWorkflow(retryactivity.RetryWorkflow)
+	//w.RegisterActivity(retryactivity.BatchProcessingActivity)
+
+	bpw := refactor_pattern1.New()
+	w.RegisterWorkflow(bpw.ExecuteWorkflow)
+	w.RegisterActivity(bpw.BatchProcessor.BatchProcessingActivity)
 
 	err = w.Run(worker.InterruptCh())
 	if err != nil {
