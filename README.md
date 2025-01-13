@@ -23,3 +23,11 @@ https://github.com/temporalio/samples-go/tree/8841c9f1b120bc994ac3c7db87c932a109
 ## child-workflow
 
 https://github.com/temporalio/samples-go/tree/8841c9f1b120bc994ac3c7db87c932a1091119ac/child-workflow
+
+## child-workflow-continue-as-new
+
+https://github.com/temporalio/samples-go/tree/66ce0f635042aba4c8e9077bcc8ee314a82b4f7e/child-workflow-continue-as-new
+
+## cancellation
+
+https://github.com/temporalio/samples-go/tree/66ce0f635042aba4c8e9077bcc8ee314a82b4f7e/cancellation
