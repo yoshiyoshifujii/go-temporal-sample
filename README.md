@@ -39,3 +39,7 @@ https://github.com/temporalio/samples-go/tree/e9168cedb7e344aa6117de793231875b76
 ## dsl
 
 https://github.com/temporalio/samples-go/tree/e9168cedb7e344aa6117de793231875b76f97f89/dsl
+
+## [wip]recovery
+
+https://github.com/temporalio/samples-go/tree/e9168cedb7e344aa6117de793231875b76f97f89/recovery
