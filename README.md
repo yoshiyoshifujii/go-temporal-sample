@@ -31,3 +31,11 @@ https://github.com/temporalio/samples-go/tree/66ce0f635042aba4c8e9077bcc8ee314a8
 ## cancellation
 
 https://github.com/temporalio/samples-go/tree/66ce0f635042aba4c8e9077bcc8ee314a82b4f7e/cancellation
+
+## goroutine
+
+https://github.com/temporalio/samples-go/tree/e9168cedb7e344aa6117de793231875b76f97f89/goroutine
+
+## dsl
+
+https://github.com/temporalio/samples-go/tree/e9168cedb7e344aa6117de793231875b76f97f89/dsl
