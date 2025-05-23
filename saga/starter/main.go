@@ -44,6 +44,13 @@ func main() {
 			isActivity02CompensationErr: false,
 			isActivity03Err:             false,
 		},
+		"activity03 fails, activity01 compensation fails": {
+			isActivity01Err:             false,
+			isActivity01CompensationErr: true,
+			isActivity02Err:             false,
+			isActivity02CompensationErr: false,
+			isActivity03Err:             true,
+		},
 	}
 
 	for name, p := range patterns {

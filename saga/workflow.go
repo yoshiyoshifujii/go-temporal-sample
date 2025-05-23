@@ -45,7 +45,7 @@ func NewWorkflowInput(
 	}
 }
 
-func Workflow(ctx workflow.Context, input WorkflowInput) error {
+func Workflow(ctx workflow.Context, input WorkflowInput) (err error) {
 	retryPolicy := &temporal.RetryPolicy{
 		InitialInterval:    time.Second,
 		BackoffCoefficient: 2.0,
@@ -61,7 +61,7 @@ func Workflow(ctx workflow.Context, input WorkflowInput) error {
 	ctx = workflow.WithActivityOptions(ctx, options)
 
 	future := workflow.ExecuteActivity(ctx, Activity01, input.Activity01Input)
-	err := future.Get(ctx, nil)
+	err = future.Get(ctx, nil)
 	if err != nil {
 		return err
 	}
