@@ -43,3 +43,7 @@ https://github.com/temporalio/samples-go/tree/e9168cedb7e344aa6117de793231875b76
 ## [wip]recovery
 
 https://github.com/temporalio/samples-go/tree/e9168cedb7e344aa6117de793231875b76f97f89/recovery
+
+## message-passing-intro
+
+https://github.com/temporalio/samples-go/tree/41d4bbc9aba3dd3294b4413b83292d5cb54241eb/message-passing-intro
